@@ -8,9 +8,9 @@ __This pipeline is not yet stable and is still being worked on.__
  * You should read the official doc of Pirus and LXD (be sure that the LXD bridge is well configured. Your container will need to access to internet).
 
 ## Instructions
-    # create a container
+    # create a container (lxc uses l'image ubuntu/xenial crée précédemment, encore dans le cache)
     lxc launch images:ubuntu/xenial GatkHaplotypeCaller
-    # configure it
+    # configure it : (to get a shell in the container)
     lxc exec GatkHaplotypeCaller -- /bin/bash
 
     # following directories are mandatory
